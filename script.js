@@ -118,4 +118,4 @@ startForm.addEventListener('click', () => {
   });
 });
 
-startForm.addEventListener('click', selectQuestionAmount);
+startForm.addEventListener('submit', selectQuestionAmount);
