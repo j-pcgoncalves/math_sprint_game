@@ -93,9 +93,10 @@ const getRadioValue = () => {
   radioInputs.forEach(radioInput => {
     if (radioInput.checked) {
       radioValue = radioInput.value;
-      return radioValue;
     }
   });
+
+  return radioValue;
 };
 
 // Form that decides amount of questions
