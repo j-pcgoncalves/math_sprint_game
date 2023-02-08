@@ -111,7 +111,10 @@ const selectQuestionAmount = e => {
 
   questionAmount = getRadioValue();
 
-  showCountdown();
+  if (questionAmount) {
+    showCountdown();
+  }
+
 }
 
 // Event Listeners
