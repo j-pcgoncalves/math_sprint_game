@@ -46,11 +46,9 @@ const createEquations = () => {
 
   // Randomly choose how many correct equations there should be
   const correctEquations = getRandomInt(questionAmount);
-  console.log('correct equations:', correctEquations);
 
   // Set amount of wrong equations
   const wrongEquations = questionAmount - correctEquations;
-  console.log('wrong equations:', wrongEquations);
 
   // Loop through, multiply random numbers up to 9, push to array
   for (let i = 0; i < correctEquations; i++) {
@@ -76,7 +74,9 @@ const createEquations = () => {
     equationsArray.push(equationObject);
 
   }
-  console.log('equations array:', equationsArray);
+
+  shuffle(equationsArray);
+
 }
 
 // Dynamically adding correct/incorrect equations
